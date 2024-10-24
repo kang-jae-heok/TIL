@@ -1,0 +1,11 @@
+# 어플리케이션의 작동 순서
+
+1. main()함수가 실행
+2. main()함수가 UIApplicationMain()함수를 호출
+3. UIApplicationMain()이 앱의 본체의 해당하는 UIApplication 객체를 생성
+4. UIApplication  객체는 info.plist 파일을 바탕으로 앱에 필요한 객체나 데이터를 로드함
+5.  UIApplication이 AppDelegate 객체에 위임(delegate)해줌
+6. 이벤트 루프를 만드는 등 실행에 필요한 준비를 진행
+7. 실행 완료 직전, 앱 델리게이트의 application(:didFinishLaunchingWithPptions:) 메소드 호출
+
+**스위프트는 @UIApplicationMain 어노테이션을 따라감**
